@@ -1,3 +1,4 @@
 test:
   override:
     - node test_index good
+    - node test_index bad
