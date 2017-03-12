@@ -7,4 +7,5 @@ dependencies:
 deployment:
   deploy:
     branch: master
-    commands: firebase deploy --token "$FIREBASE_TOKNE"
+    commands:
+      - firebase deploy --token "$FIREBASE_TOKEN"
