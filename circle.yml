@@ -1,4 +1,10 @@
 test:
   override:
     - node test_index good
-    - node test_index bad
+dependencies:
+  override:
+    - npm install -g firebase-tools
+deployment:
+  deploy:
+    branch: master
+    commands: firebase deploy --token "$FIREBASE_TOKNE"
